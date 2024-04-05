@@ -26,9 +26,9 @@ const Burger = ({ burger }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between p-5 shadow-md group">
+    <div className="flex flex-col items-center justify-center gap-5 p-2 shadow-md group">
       {/* image */}
-      <div className="flex items-center justify-center h-[40%]">
+      <div className="flex items-center justify-center h-[40%] ">
         <Image
           onClick={openModal}
           className="mb-8 transition-all duration-300 bg-cover cursor-pointer lg:group-hover:translate-y-3"
@@ -40,10 +40,10 @@ const Burger = ({ burger }) => {
         />
       </div>
       {/* info */}
-      <div className="h-[40%]">
+      <div className="h-fit">
         {/* title */}
         <div onClick={openModal}>
-          <div className="text-xl font-bold capitalize cursor-pointer ">
+          <div className="mb-2 text-xl font-bold capitalize cursor-pointer">
             {burger.name}
           </div>
         </div>
@@ -59,14 +59,14 @@ const Burger = ({ burger }) => {
         {/* btn -> hidden (sm) - visible (lg) */}
         <button
           onClick={openModal}
-          className="hidden text-sm font-semibold text-white rounded-lg lg:flex gradient btn-sm"
+          className="hidden text-sm font-semibold text-white rounded-lg lg:flex btn btn-secondary btn-sm "
         >
           Choose
         </button>
         {/* btn -> visible (sm) - hidden (lg) */}
         <button
           onClick={openModal}
-          className="px-3 text-sm btn gradient btn-sm lg:hidden"
+          className="px-3 text-sm btn btn-secondary btn-sm lg:hidden"
         >
           starts at {burger.priceSm}
         </button>

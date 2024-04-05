@@ -35,14 +35,7 @@ module.exports = {
         orange: "#FF7A30",
       },
       backgroundImage: {
-        pattern: "url('/assets/others/pattern.png')",
-      },
-      backgroundSize: {
-        "size-200": "200% 200%",
-      },
-      backgroundPosition: {
-        "pos-0": "0% 0%",
-        "pos-100": "100% 100%",
+        bgHero: "url('/assets/bg-hero.webp')",
       },
     },
   },

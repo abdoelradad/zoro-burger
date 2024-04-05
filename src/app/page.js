@@ -307,7 +307,7 @@ export default function Home() {
       <Banner />
       <div className="container mx-auto">
         {/* burger grid */}
-        <div className="grid grid-cols-1 gap-[36px] md:grid-cols-3 md:gap-[16px] xl:grid-cols-4 xl:gap-[30px] py-12">
+        <div className="grid grid-cols-1 gap-[36px] md:grid-cols-3 md:gap-[16px] xl:grid-cols-4 xl:gap-[30px] py-32">
           {burgers.map((burger) => {
             return <Burger burger={burger} />;
           })}
