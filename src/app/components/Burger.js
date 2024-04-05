@@ -43,15 +43,15 @@ const Burger = ({ burger }) => {
       <div className="h-[40%]">
         {/* title */}
         <div onClick={openModal}>
-          <div className="mb-3 text-xl font-bold capitalize cursor-pointer">
+          <div className="text-xl font-bold capitalize cursor-pointer ">
             {burger.name}
           </div>
         </div>
         {/* description */}
-        <div className="pb-5 text-sm text-gray-500">{burger.description}</div>
+        <div className="text-sm text-gray-500 ">{burger.description}</div>
       </div>
       {/* price & btn */}
-      <div className="flex items-center justify-between w-full mt-2">
+      <div className="flex items-center justify-between w-full">
         {/* price => hidden (sm) - visible (lg) */}
         <div className="hidden text-xl font-semibold lg:flex">
           starts at {burger.priceSm}
