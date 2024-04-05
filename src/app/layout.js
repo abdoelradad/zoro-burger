@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
     <CartProvider>
       <html
         lang="en"
-        className=" scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-primary"
+        className=" scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-secondary"
       >
         <body
           className={`${quicksand.variable} ${bangers.variable} ${robotoCondensed.variable} font-quicksand`}
