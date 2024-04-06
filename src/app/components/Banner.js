@@ -12,8 +12,8 @@ const Banner = () => {
             And from this had sacred loved florid his are shun loved florid his
             are this had sacred loved florid his shun..
           </p>
-          <button className="px-5 py-3 text-xl btn btn-lg btn-primary">
-            KNOW MORE
+          <button className="px-6 py-3 text-2xl font-bold tracking-wide text-white uppercase transition-all duration-300 hover:bg-secondary/90 bg-secondary font-robotoCondensed">
+            know more
           </button>
         </div>
       </div>

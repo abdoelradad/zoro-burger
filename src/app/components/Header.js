@@ -28,14 +28,17 @@ const Header = () => {
         headerActive
           ? " bg-black"
           : "h-[4rem] backdrop-filter backdrop-blur-md bg-opacity-20 bg-gray-50 bg-clip-padding"
-      } fixed top-0 w-full h-[4rem] transition-all duration-300 z-20 shadow-md`}
+      } fixed top-0 w-full h-[4rem] transition-all duration-300 z-20 shadow-md flex items-center justify-center`}
     >
       {/* container */}
-      <div className="container flex flex-row items-center justify-between h-full mx-auto">
+      <div className="container flex flex-row items-center justify-between h-full mx-auto ">
         {/* logo */}
-        <Link href={"/"} className="flex items-center gap-1 cursor-pointer ">
-          <FaBurger className="text-2xl text-white" />
-          <span className="text-2xl text-white uppercase font-bangers">
+        <Link
+          href={"/"}
+          className="flex items-center justify-center gap-1 cursor-pointer"
+        >
+          <FaBurger className="text-3xl text-white" />
+          <span className="text-3xl font-bold text-white uppercase">
             Heyine
           </span>
         </Link>
@@ -44,14 +47,14 @@ const Header = () => {
         <MobileNav
           containerStyles={`${
             openNav ? "right-0" : "-right-[100%]"
-          } bg-white text-black top-16 fixed  w-full h-screen transition-all duration-300 bg-black/95 md:hidden`}
+          } bg-black/70 text-black top-16 fixed w-full h-screen transition-all duration-100 md:hidden`}
         />
 
         {/* hide/open menu button */}
         <div>
           <Nav containerStyles="hidden md:flex" />
           <button onClick={() => setOpenNav(!openNav)} className="md:hidden">
-            <MdMenu className="text-4xl text-white" />
+            <MdMenu className="text-5xl text-white" />
           </button>
         </div>
       </div>
