@@ -26,7 +26,7 @@ const Burger = ({ burger }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center gap-5 p-2 shadow-md group">
+    <div className="flex flex-col items-center justify-center gap-5 p-5 shadow-md group">
       {/* image */}
       <div className="flex items-center justify-center h-[40%] ">
         <Image
